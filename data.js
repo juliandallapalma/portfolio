@@ -9,11 +9,10 @@ const SITE = {
   role:  "Senior Technical Operations Manager",
   location: "Sydney, Australia",
 
-  tagline: ["Live events,", "precisely", "executed."],
+  tagline: ["Big moments,", "good energy", "always."],
   // Middle line renders in italic — adjust the three lines above as needed
 
-  bio: `Delivering complex activations for the world's most
-demanding brands — from concept to strike, nothing left to chance.`,
+  bio: `Delivering complex activations for the world's most iconic brands.`,
 
   stats: [
     { number: "100+", label: "Activations" },
@@ -26,16 +25,10 @@ demanding brands — from concept to strike, nothing left to chance.`,
   phone:    "+61 449 590 510",
 
   // --- ABOUT ----------------------------------------------
-  aboutHeading: ["Technical precision", "meets creative vision."],
+  aboutHeading: ["The person clients", "ask for by name."],
   // Second line renders in italic
 
-  aboutBody: `Julian Dalla-Palma is a Senior Technical Operations Manager
-with a career built on delivering complex live events for luxury,
-entertainment, and global consumer brands.
-
-Fluent in the full technical stack — AV, power, lighting, staging,
-broadcast, and crew — with the interpersonal skills to coordinate
-agencies, clients, and venues without friction.`,
+  aboutBody: `With five years in broadcast at SBS and two years delivering large-scale activations at Polite Playground, Julian brings a rare combination of technical depth and live event instinct to everything he touches.`,
 
   expertise: [
     { skill: "AV Design & Integration",          tag: "Core"       },
@@ -44,7 +37,6 @@ agencies, clients, and venues without friction.`,
     { skill: "Venue & Stakeholder Management",   tag: "Ops"        },
     { skill: "Budget & Resource Planning",        tag: "Ops"       },
     { skill: "Crew & Supplier Coordination",      tag: "Ops"       },
-    { skill: "Site & Risk Management",            tag: "Ops"       },
     { skill: "Touring & Multi-city Events",       tag: "Specialist" },
   ],
 
@@ -56,6 +48,15 @@ agencies, clients, and venues without friction.`,
 
   work: [
     {
+	  featured: true,
+	  brand:    "Netflix",
+	  event:    "Tudum Fan Experience — Sydney",
+	  role:     "Senior Technical Operations",
+	  detail:   "Large-scale fan activation across multiple zones. Full AV and staging infrastructure, live programming coordination, 2,000+ attendees.",
+	  image:    "images/netflix.png",
+	  placeholderColor: "#0d1310",
+	},
+	{
       featured: false,
       brand:    "Prada",
       event:    "Resort Collection Launch — Milan & Sydney",
@@ -88,15 +89,6 @@ agencies, clients, and venues without friction.`,
       detail:   "Pop-up retail and sampling activation. Full event infrastructure, power distribution, AV and wayfinding systems.",
       image:    "images/nongshim.png",
     },
-	{
-	  featured: true,
-	  brand:    "Netflix",
-	  event:    "Tudum Fan Experience — Sydney",
-	  role:     "Senior Technical Operations",
-	  detail:   "Large-scale fan activation across multiple zones. Full AV and staging infrastructure, live programming coordination, 2,000+ attendees.",
-	  image:    "images/netflix.png",
-	  placeholderColor: "#0d1310",
-	},
     {
       featured: false,
       brand:    "Spotify",
