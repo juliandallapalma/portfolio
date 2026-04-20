@@ -74,11 +74,20 @@
   .work-tile { position: relative; overflow: hidden; aspect-ratio: 4/3; cursor: pointer; background: var(--bg-2); }
   .work-tile.featured { grid-column: span 2; aspect-ratio: 8/3; }
 
-  @media (max-width: 768px) {
-    .work-grid { grid-template-columns: 1fr; }
-    .work-tile,
-    .work-tile.featured { grid-column: span 1; aspect-ratio: 4/3; }
-  }
+  /* --- MOBILE (768px and under) --- */
+@media (max-width: 768px) {
+
+  /* stack tiles into a single full-width column instead of 3 */
+  .work-grid { grid-template-columns: 1fr; }
+
+  /* reset featured (wide) tiles to single column, same ratio as regular tiles */
+  .work-tile,
+  .work-tile.featured { grid-column: span 1; aspect-ratio: 4/3; }
+
+  /* always show tile details — no hover on touch screens */
+  .work-tile .tile-details { max-height: 120px; opacity: 1; }
+
+}
 
   .tile-bg { width: 100%; height: 100%; object-fit: cover; display: block; position: absolute; inset: 0; transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94); filter: grayscale(20%); }
   .work-tile:hover .tile-bg { transform: scale(1.04); filter: grayscale(0%); }
