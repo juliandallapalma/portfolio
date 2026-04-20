@@ -10,7 +10,7 @@ const SITE = {
   location: "Sydney, Australia",
 
   tagline: ["Big moments,", "good energy", "always."],
-  // Middle line renders in italic — adjust the three lines above as needed
+  // Three lines - middle line renders in italic
 
   bio: `Delivering complex activations for the world's most iconic brands.`,
 
@@ -22,24 +22,24 @@ const SITE = {
   // --- CONTACT --------------------------------------------
   email:    "julian.dallapalma@gmail.com",
   linkedin: "https://www.linkedin.com/in/julian-dalla-palma-628376157/",
-  phone:    "+61 449 590 510",
 
   // --- ABOUT ----------------------------------------------
   aboutHeading: ["The person clients", "ask for by name."],
-  // Second line renders in italic
+  // two lines
 
   aboutBody: `With five years in broadcast at SBS and two years delivering large-scale activations at Polite Playground, Julian brings a rare combination of technical depth and live event instinct to everything he touches.`,
 
   expertise: [
-    { skill: "AV Design & Integration",          tag: "Core"       },
-    { skill: "Power Distribution & Infrastructure", tag: "Core"    },
-    { skill: "Broadcast & Streaming",            tag: "Core"       },
-    { skill: "Venue & Stakeholder Management",   tag: "Ops"        },
-    { skill: "Budget & Resource Planning",        tag: "Ops"       },
-    { skill: "Crew & Supplier Coordination",      tag: "Ops"       },
-    { skill: "Touring & Multi-city Events",       tag: "Specialist" },
+  { skill: "Touring & Multi-city Events",  		tag: "Specialist"},
+  { skill: "Live Event Operations",        		tag: "Core"},
+  { skill: "AV Design & Integration",      		tag: "Core"},
+  { skill: "Crew & Supplier Coordination", 		tag: "Ops"},
+  { skill: "Venue & Stakeholder Management", 	tag: "Ops"},
+  { skill: "Budget & Resource Planning",   		tag: "Ops"},
+  { skill: "Broadcast & Streaming",        		tag: "Broadcast"},
+  { skill: "Master Control & Media Ingest", 	tag: "Broadcast"},
   ],
-
+  
   // --- WORK TILES -----------------------------------------
   // featured: true  →  wide tile (spans 2 columns)
   // image: "images/filename.jpg"  →  use a photo
@@ -50,7 +50,7 @@ const SITE = {
     {
 	  featured: true,
 	  brand:    "Netflix",
-	  event:    "Tudum Fan Experience — Sydney",
+	  event:    "Fan Experience — Sydney",
 	  role:     "Senior Technical Operations",
 	  detail:   "Large-scale fan activation across multiple zones. Full AV and staging infrastructure, live programming coordination, 2,000+ attendees.",
 	  image:    "images/netflix.png",
