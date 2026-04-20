@@ -208,7 +208,7 @@
 
 <section id="contact" class="contact-section">
   <div>
-    <h2 class="contact-heading">Let's work<br><em>together.</em></h2>
+    <h2 class="contact-heading">Let's work<br>together.</h2>
   </div>
   <div class="contact-links"></div>
 </section>
@@ -269,7 +269,7 @@
 
   // --- About ---
   el('.about-heading').innerHTML =
-    `${SITE.aboutHeading[0]}<br><em>${SITE.aboutHeading[1]}</em>`;
+    `${SITE.aboutHeading[0]}<br>${SITE.aboutHeading[1]}`;
   el('.about-body').textContent = SITE.aboutBody;
 
   el('.expertise-list').innerHTML = SITE.expertise.map(e => `
@@ -280,7 +280,6 @@
   el('.contact-links').innerHTML = `
     <a class="contact-link" href="mailto:${SITE.email}">${SITE.email}</a>
     <a class="contact-link" href="${SITE.linkedin}" target="_blank">LinkedIn</a>
-    <a class="contact-link" href="tel:${SITE.phone.replace(/\s/g,'')}">${SITE.phone}</a>
   `;
 
   // --- Footer ---
