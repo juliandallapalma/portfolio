@@ -27,13 +27,17 @@ const SITE = {
   // --- HIGHLIGHT REEL -------------------------------------
   // Auto-scrolling strip between hero and work grid
   reel: [
+    "images/Slideshow/bankwest.jpg",
+    "images/Slideshow/vaseline2.jpg",
     "images/Slideshow/cadillac.jpg",
     "images/Slideshow/durex.jpg",
     "images/Slideshow/kia.jpg",
     "images/Slideshow/lego3.jpg",
     "images/Slideshow/microsoft.jpg",
+    "images/Slideshow/netflix.jpg",
     "images/Slideshow/prada.jpg",
     "images/Slideshow/vaseline.jpg",
+    "images/Slideshow/lego.jpg",
   ],
 
   // --- ABOUT ----------------------------------------------
@@ -58,16 +62,26 @@ const SITE = {
   // images: ["a.jpg", …]  → crossfade slideshow (5s per image)
   // images: null          → dark placeholder colour
   // video: "path.mp4"     → plays as looping background video
+  //                          (.mov works in Safari; convert to .mp4 for Chrome)
   // placeholderColor      → only used when images is null and no video
 
   work: [
     {
-      featured: true,
+      featured: false,
       brand:   "Netflix",
       event:   "Next on Netflix 2026",
       role:    "Senior Technical Operations",
       detail:  "Multi-location experiential activation promoting Netflix's 2026 content slate through an immersive tarot-themed experience. Custom-built branded environment, interactive tarot reading quiz, and a bespoke automated card dispenser. 2,000+ attendees.",
       images:  ["images/netflix.png", "images/netflix2.jpg"],
+    },
+	{
+      featured: false,
+      brand:   "Pistachio Papi x Carroten",
+      event:   "Bondi Pavilion",
+      role:    "Senior Technical Operations",
+      detail:  "Beachfront branded activation at Bondi Pavilion requiring additional engineering and environmental planning due to coastal conditions.",
+      video:   "images/pistachiopapi.mov",
+      placeholderColor: "#0d1315",
     },
     {
       featured: false,
@@ -75,7 +89,7 @@ const SITE = {
       event:   "Pop-up Experience",
       role:    "Senior Technical Operations",
       detail:  "Premium branded pop-up experience across multiple Sydney locations featuring an integrated automated photo studio and customised customer experience.",
-      images:  ["images/prada.jpg", "images/prada2.JPG"],
+      images:  ["images/prada.jpg", "images/prada2.JPG", "images/prada3.JPG"],
     },
     {
       featured: false,
@@ -101,14 +115,23 @@ const SITE = {
       detail:  "Weekend activation at Bourke Street Mall featuring interactive games, branded photo opportunities, poster creation, and live noodle sampling.",
       images:  ["images/nongshim.png", "images/nongshim2.png"],
     },
-    {
+    //{
+    //  featured: false,
+    //  brand:   "Fitness First",
+    //  event:   "Wall Hang Challenge",
+    //  role:    "Technical Operations",
+    //  detail:  "Two-week Pitt Street Mall activation featuring an interactive fitness challenge with three integrated display screens and a timed wall-hang competition.",
+    //  images:  null,
+    //  placeholderColor: "#131318",
+    //},
+	{
       featured: false,
-      brand:   "Fitness First",
-      event:   "Wall Hang Challenge",
-      role:    "Technical Operations",
-      detail:  "Two-week Pitt Street Mall activation featuring an interactive fitness challenge with three integrated display screens and a timed wall-hang competition.",
-      images:  null,
-      placeholderColor: "#131318",
+      brand:   "NRL",
+      event:   "Commentary Booth",
+      role:    "Senior Technical Operations",
+      detail:  "Two-person interactive commentary booth allowing attendees to record and dub commentary over iconic NRL highlights.",
+      images:  ["images/nrl.jpg"],
+      placeholderColor: "#0d1315",
     },
     {
       featured: false,
@@ -120,29 +143,11 @@ const SITE = {
     },
     {
       featured: false,
-      brand:   "NRL",
-      event:   "Commentary Booth",
-      role:    "Senior Technical Operations",
-      detail:  "Two-person interactive commentary booth allowing attendees to record and dub commentary over iconic NRL highlights.",
-      images:  null,
-      placeholderColor: "#0d1315",
-    },
-    {
-      featured: false,
       brand:   "Optus / Nothing Phone",
       event:   "Move, You Lose",
       role:    "Senior Technical Operations",
       detail:  "National experiential campaign promoting the launch of the Nothing Phone across five locations in NSW, VIC and QLD. The activation centred around an interactive sensor challenge.",
-      images:  null,
-      placeholderColor: "#0d1315",
-    },
-    {
-      featured: false,
-      brand:   "Pistachio Papi x Carroten",
-      event:   "Bondi Pavilion",
-      role:    "Senior Technical Operations",
-      detail:  "Beachfront branded activation at Bondi Pavilion requiring additional engineering and environmental planning due to coastal conditions.",
-      video:   "images/pistachiopapi.mp4",
+      images:  ["images/optus.png"],
       placeholderColor: "#0d1315",
     },
   ],
