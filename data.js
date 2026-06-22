@@ -80,7 +80,7 @@ const SITE = {
       event:   "Bondi Pavilion",
       role:    "Senior Technical Operations",
       detail:  "Beachfront branded activation at Bondi Pavilion requiring additional engineering and environmental planning due to coastal conditions.",
-      video:   "images/pistachiopapi.mov",
+      video:   "images/pistachiopapi.mp4",
       placeholderColor: "#0d1315",
     },
     {
