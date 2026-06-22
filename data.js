@@ -15,14 +15,13 @@ const SITE = {
   bio: `Delivering complex activations for the world's most iconic brands.`,
 
   stats: [
-    { number: "100+", label: "Activations"   },
-    { number: "30+",  label: "Global Brands" },
+    { number: "500+", label: "Activations"   },
+    { number: "50+",  label: "Global Brands" },
   ],
 
   // --- CONTACT --------------------------------------------
   email:    "julian.dallapalma@gmail.com",
   linkedin: "https://www.linkedin.com/in/julian-dalla-palma-628376157/",
-  phone:    "+61 449 590 510",
 
   // --- HIGHLIGHT REEL -------------------------------------
   // Auto-scrolling strip between hero and work grid
@@ -31,13 +30,12 @@ const SITE = {
     "images/Slideshow/vaseline2.jpg",
     "images/Slideshow/cadillac.jpg",
     "images/Slideshow/durex.jpg",
-    "images/Slideshow/kia.jpg",
     "images/Slideshow/lego3.jpg",
     "images/Slideshow/microsoft.jpg",
     "images/Slideshow/netflix.jpg",
     "images/Slideshow/prada.jpg",
     "images/Slideshow/vaseline.jpg",
-    "images/Slideshow/lego.jpg",
+    "images/Slideshow/lego.JPG",
   ],
 
   // --- ABOUT ----------------------------------------------
