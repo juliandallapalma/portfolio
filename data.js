@@ -5,115 +5,144 @@
 const SITE = {
 
   // --- NAV + HERO -----------------------------------------
-  name:  "Julian Dalla-Palma",
-  role:  "Senior Technical Operations Manager",
+  name:     "Julian Dalla-Palma",
+  role:     "Senior Technical Operations Manager",
   location: "Sydney, Australia",
 
-  tagline: ["Big moments,", "good energy", "always."],
-  // Three lines - middle line renders in italic
+  tagline: ["Big moments,", "good energy,", "always."],
+  // Three lines — middle line renders in italic
 
   bio: `Delivering complex activations for the world's most iconic brands.`,
 
   stats: [
-    { number: "100+", label: "Activations" },
-    { number: "30+", label: "Global Brands" },
+    { number: "100+", label: "Activations"   },
+    { number: "30+",  label: "Global Brands" },
   ],
 
   // --- CONTACT --------------------------------------------
   email:    "julian.dallapalma@gmail.com",
   linkedin: "https://www.linkedin.com/in/julian-dalla-palma-628376157/",
+  phone:    "+61 449 590 510",
+
+  // --- HIGHLIGHT REEL -------------------------------------
+  // Auto-scrolling strip between hero and work grid
+  reel: [
+    "images/Slideshow/cadillac.jpg",
+    "images/Slideshow/durex.jpg",
+    "images/Slideshow/kia.jpg",
+    "images/Slideshow/lego3.jpg",
+    "images/Slideshow/microsoft.jpg",
+    "images/Slideshow/prada.jpg",
+    "images/Slideshow/vaseline.jpg",
+  ],
 
   // --- ABOUT ----------------------------------------------
   aboutHeading: ["The person clients", "ask for by name."],
-  // two lines
+  // Second line renders in italic
 
   aboutBody: `With five years in broadcast at SBS and two years delivering large-scale activations at Polite Playground, Julian brings a rare combination of technical depth and live event instinct to everything he touches.`,
 
   expertise: [
-  { skill: "Touring & Multi-city Events",  		tag: "Specialist"},
-  { skill: "Live Event Operations",        		tag: "Core"},
-  { skill: "AV Design & Integration",      		tag: "Core"},
-  { skill: "Crew & Supplier Coordination", 		tag: "Ops"},
-  { skill: "Venue & Stakeholder Management", 	tag: "Ops"},
-  { skill: "Budget & Resource Planning",   		tag: "Ops"},
-  { skill: "Broadcast & Streaming",        		tag: "Broadcast"},
-  { skill: "Master Control & Media Ingest", 	tag: "Broadcast"},
+    { skill: "Touring & Multi-city Events",    tag: "Specialist" },
+    { skill: "Live Event Operations",          tag: "Core"       },
+    { skill: "AV Design & Integration",        tag: "Core"       },
+    { skill: "Crew & Supplier Coordination",   tag: "Ops"        },
+    { skill: "Venue & Stakeholder Management", tag: "Ops"        },
+    { skill: "Budget & Resource Planning",     tag: "Ops"        },
+    { skill: "Broadcast & Streaming",          tag: "Broadcast"  },
+    { skill: "Master Control & Media Ingest",  tag: "Broadcast"  },
   ],
-  
+
   // --- WORK TILES -----------------------------------------
-  // featured: true  →  wide tile (spans 2 columns)
-  // image: "images/filename.jpg"  →  use a photo
-  // image: null  →  shows a dark placeholder instead
-  // placeholderColor: only used when image is null
+  // featured: true        → wide tile (spans 2 columns)
+  // images: ["a.jpg", …]  → crossfade slideshow (5s per image)
+  // images: null          → dark placeholder colour
+  // video: "path.mp4"     → plays as looping background video
+  // placeholderColor      → only used when images is null and no video
 
   work: [
     {
-	  featured: true,
-	  brand:    "Netflix",
-	  event:    "Fan Experience — Sydney",
-	  role:     "Senior Technical Operations",
-	  detail:   "Large-scale fan activation across multiple zones. Full AV and staging infrastructure, live programming coordination, 2,000+ attendees.",
-	  image:    "images/netflix.png",
-	  placeholderColor: "#0d1310",
-	},
-	{
-      featured: false,
-      brand:    "Prada",
-      event:    "Resort Collection Launch — Milan & Sydney",
-      role:     "Technical Director",
-      detail:   "Dual-city simultaneous activation. Full AV coordination, venue technical integration, 300+ guests. Six-week build, zero-fault delivery.",
-      image:    "images/prada.png",
+      featured: true,
+      brand:   "Netflix",
+      event:   "Next on Netflix 2026",
+      role:    "Senior Technical Operations",
+      detail:  "Multi-location experiential activation promoting Netflix's 2026 content slate through an immersive tarot-themed experience. Custom-built branded environment, interactive tarot reading quiz, and a bespoke automated card dispenser. 2,000+ attendees.",
+      images:  ["images/netflix.png", "images/netflix2.jpg"],
     },
     {
       featured: false,
-      brand:    "YSL Beauty",
-      event:    "Global Campaign Launch",
-      role:     "Lead Technical Ops",
-      detail:   "Multi-room immersive brand experience. Custom LED installation, live product integration, influencer-facing technical production.",
-      image:    null,
-      placeholderColor: "#0e1318",
+      brand:   "Prada",
+      event:   "Pop-up Experience",
+      role:    "Senior Technical Operations",
+      detail:  "Premium branded pop-up experience across multiple Sydney locations featuring an integrated automated photo studio and customised customer experience.",
+      images:  ["images/prada.jpg", "images/prada2.JPG"],
     },
     {
       featured: false,
-      brand:    "Lego",
-      event:    "Fan Experience — ANZ Tour",
-      role:     "Senior Technical Ops",
-      detail:   "Four-city touring installation. Modular set design, interactive tech integration, local crew management across all states.",
-      image:    "images/lego.png",
+      brand:   "BankWest",
+      event:   "Race to the Top",
+      role:    "Senior Technical Operations",
+      detail:  "Travelling national activation featuring an interactive \"Race to the Top\" quiz experience across Melbourne, Sydney, Queensland, and the Sunshine Coast.",
+      images:  ["images/bankwest.jpg", "images/bankwest2.png"],
     },
     {
       featured: false,
-      brand:    "Nongshim",
-      event:    "Brand Activation — Sydney",
-      role:     "Technical Operations",
-      detail:   "Pop-up retail and sampling activation. Full event infrastructure, power distribution, AV and wayfinding systems.",
-      image:    "images/nongshim.png",
+      brand:   "Lego",
+      event:   "Lego x Star Wars",
+      role:    "Senior Technical Operations",
+      detail:  "Multi-site activation celebrating the LEGO Smart Brick across Westfields in Sydney.",
+      images:  ["images/lego.png", "images/lego2.png", "images/lego3.jpg"],
     },
     {
       featured: false,
-      brand:    "Spotify",
-      event:    "APAC Artist Series",
-      role:     "Technical Director",
-      detail:   "Intimate live music and content capture event. Studio-grade audio, streaming infrastructure, artist rider compliance.",
-      image:    null,
+      brand:   "Nongshim",
+      event:   "Brand Activation — Melbourne",
+      role:    "Technical Operations",
+      detail:  "Weekend activation at Bourke Street Mall featuring interactive games, branded photo opportunities, poster creation, and live noodle sampling.",
+      images:  ["images/nongshim.png", "images/nongshim2.png"],
+    },
+    {
+      featured: false,
+      brand:   "Fitness First",
+      event:   "Wall Hang Challenge",
+      role:    "Technical Operations",
+      detail:  "Two-week Pitt Street Mall activation featuring an interactive fitness challenge with three integrated display screens and a timed wall-hang competition.",
+      images:  null,
       placeholderColor: "#131318",
     },
     {
       featured: false,
-      brand:    "Valentino",
-      event:    "Pop-up Boutique Experience",
-      role:     "Technical Operations",
-      detail:   "Temporary luxury retail environment. Architectural lighting design, climate control, security systems integration.",
-      image:    null,
-      placeholderColor: "#100f0e",
+      brand:   "Vaseline",
+      event:   "Live Billboard Experience",
+      role:    "Technical Operations",
+      detail:  "Pitt Street Mall activation featuring a custom photo booth experience with live billboard integration to promote the Vaseline Gluta-Hya product range.",
+      images:  ["images/vaseline.jpg", "images/vaseline2.jpg"],
     },
     {
       featured: false,
-      brand:    "Samsung",
-      event:    "Product Launch — Sydney Opera House",
-      role:     "Senior Technical Ops",
-      detail:   "High-profile product reveal at an iconic heritage venue. Complex AV integration within strict venue constraints.",
-      image:    null,
+      brand:   "NRL",
+      event:   "Commentary Booth",
+      role:    "Senior Technical Operations",
+      detail:  "Two-person interactive commentary booth allowing attendees to record and dub commentary over iconic NRL highlights.",
+      images:  null,
+      placeholderColor: "#0d1315",
+    },
+    {
+      featured: false,
+      brand:   "Optus / Nothing Phone",
+      event:   "Move, You Lose",
+      role:    "Senior Technical Operations",
+      detail:  "National experiential campaign promoting the launch of the Nothing Phone across five locations in NSW, VIC and QLD. The activation centred around an interactive sensor challenge.",
+      images:  null,
+      placeholderColor: "#0d1315",
+    },
+    {
+      featured: false,
+      brand:   "Pistachio Papi x Carroten",
+      event:   "Bondi Pavilion",
+      role:    "Senior Technical Operations",
+      detail:  "Beachfront branded activation at Bondi Pavilion requiring additional engineering and environmental planning due to coastal conditions.",
+      video:   "images/pistachiopapi.mp4",
       placeholderColor: "#0d1315",
     },
   ],
