@@ -62,7 +62,7 @@ const SITE = {
 
   work: [
     {
-      featured: true,
+      featured: false,
       brand:   "Netflix",
       event:   "Next on Netflix 2026",
       role:    "Senior Technical Operations",
