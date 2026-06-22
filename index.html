@@ -60,7 +60,7 @@
   .hero h1 { font-size: clamp(3.5rem, 8vw, 7rem); font-weight: 300; line-height: 1.0; letter-spacing: -0.02em; margin-bottom: 2rem; }
   .hero h1 em { font-style: italic; color: var(--text-mid); }
   .hero-meta { display: flex; gap: 3rem; align-items: flex-end; }
-  .hero-descriptor { font-size: 14px; line-height: 1.7; color: var(--text-muted); max-width: 380px; }
+  .hero-descriptor { font-size: 14px; line-height: 1.7; color: var(--text-muted); max-width: 500px; }
   .hero-stats { display: flex; gap: 2.5rem; margin-left: auto; }
   .stat { text-align: right; }
   .stat-num { font-size: 2rem; font-weight: 300; letter-spacing: -0.02em; line-height: 1; }
@@ -96,9 +96,6 @@
     width: max-content;
     animation: reel-scroll 30s linear infinite;
   }
-
-  /* pause on hover */
-  .reel-track:hover { animation-play-state: paused; }
 
   .reel-track img {
     height: 100%;
@@ -154,14 +151,14 @@
 
   /* --- ABOUT --- */
   .about-section { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--border); }
-  .about-left { padding: 5rem 3rem; border-right: 1px solid var(--border); }
+  .about-left { padding: 3rem 3rem; border-right: 1px solid var(--border); }
   .about-right { padding: 5rem 3rem; }
 
   .about-heading { font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 300; line-height: 1.15; letter-spacing: -0.01em; margin-bottom: 2rem; }
   .about-heading em { font-style: italic; color: var(--text-mid); }
   .about-body { font-size: 15px; line-height: 1.8; color: var(--text-muted); max-width: 420px; white-space: pre-line; }
 
-  .expertise-list { list-style: none; margin-top: 3rem; }
+  .expertise-list { list-style: none; }
   .expertise-list li { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid var(--border); font-size: 13px; color: var(--text-mid); letter-spacing: 0.02em; }
   .expertise-list li:first-child { border-top: 1px solid var(--border); }
   .expertise-list .tag { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); }
@@ -382,7 +379,6 @@
   el('.contact-links').innerHTML = `
     <a class="contact-link" href="mailto:${SITE.email}">${SITE.email}</a>
     <a class="contact-link" href="${SITE.linkedin}" target="_blank">LinkedIn</a>
-    <a class="contact-link" href="tel:${SITE.phone.replace(/\s/g, '')}">${SITE.phone}</a>
   `;
 
   // --- Footer ---

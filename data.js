@@ -15,7 +15,7 @@ const SITE = {
   bio: `Delivering complex activations for the world's most iconic brands.`,
 
   stats: [
-    { number: "500+", label: "Activations"   },
+    { number: "800+", label: "Activations"   },
     { number: "50+",  label: "Global Brands" },
   ],
 
