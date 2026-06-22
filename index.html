@@ -205,13 +205,22 @@
     .work-tile,
     .work-tile.featured { grid-column: span 1; aspect-ratio: 4/3; }
 
-    /* always show tile details — no hover on touch screens */
-    .work-tile .tile-details { max-height: 120px; opacity: 1; }
+    /* only the centered (focused) tile shows its details */
+    .work-tile.focused .tile-details { max-height: 120px; opacity: 1; }
+
+    /* stronger gradient on the focused tile since details are visible */
+    .work-tile.focused .tile-overlay { background: linear-gradient(to top, rgba(12,12,11,1) 0%, rgba(12,12,11,0.75) 50%, rgba(12,12,11,0.1) 100%); }
 
     /* stack about section vertically, remove side border */
     .about-section { grid-template-columns: 1fr; }
     .about-left { padding: 3rem 1.25rem 2rem; border-right: none; border-bottom: 1px solid var(--border); }
-    .about-right { padding: 2rem 1.25rem 3rem; }
+    .about-right { padding: 2rem 1.25rem 0; }
+
+    /* fix expertise list borders on mobile:
+       remove first-child top border (list provides its own),
+       remove bottom padding so the last border sits flush */
+    .expertise-list { border-top: 1px solid var(--border); }
+    .expertise-list li:first-child { border-top: none; }
 
     /* prevent expertise tags from clipping off screen */
     .expertise-list li { font-size: 12px; }
@@ -237,7 +246,7 @@
   <span class="nav-name"></span>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
-	<li><a href="#work">Work</a></li>
+    <li><a href="#work">Work</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
@@ -367,6 +376,34 @@
       slides[current].classList.add('active');
     }, 5000);
   });
+
+  // --- Mobile focused tile ---
+  // On mobile, add .focused to whichever tile's center is closest to the viewport center
+  // This reveals the details panel only on the centered tile as you scroll
+  if (window.innerWidth <= 768) {
+    function updateFocusedTile() {
+      const viewportCenter = window.innerHeight / 2;
+      let closestTile = null;
+      let closestDistance = Infinity;
+
+      els('.work-tile').forEach(tile => {
+        const rect = tile.getBoundingClientRect();
+        const tileCenter = rect.top + rect.height / 2;
+        const distance = Math.abs(tileCenter - viewportCenter);
+        if (distance < closestDistance) {
+          closestDistance = distance;
+          closestTile = tile;
+        }
+      });
+
+      els('.work-tile').forEach(tile => tile.classList.remove('focused'));
+      if (closestTile) { closestTile.classList.add('focused'); }
+    }
+
+    // Update on scroll and on load
+    window.addEventListener('scroll', updateFocusedTile, { passive: true });
+    updateFocusedTile();
+  }
 
   // --- About ---
   el('.about-heading').innerHTML = `${SITE.aboutHeading[0]}<br><em>${SITE.aboutHeading[1]}</em>`;

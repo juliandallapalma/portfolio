@@ -99,8 +99,8 @@ const SITE = {
     },
     {
       featured: false,
-      brand:   "Lego",
-      event:   "Lego x Star Wars",
+      brand:   "Lego x Star Wars",
+      event:   "Smart Play",
       role:    "Senior Technical Operations",
       detail:  "Multi-site activation celebrating the LEGO Smart Brick across Westfields in Sydney.",
       images:  ["images/lego.png", "images/lego2.png", "images/lego3.jpg"],
